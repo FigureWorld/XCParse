@@ -1,14 +1,17 @@
 package com.fanglv.XCParse.test.excel;
 
 import java.util.Date;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 import com.fanglv.XCParse.data.DataInstanceInterface;
 
 /**
- * 淘房中国订单信息Dto
- *
+ * 订单tao
+ * @Description
+ * @file_name TfOrderInfoDto.java
+ * @time 上午11:49:26
+ * @author muxiaocao {https://github.com/MuXiaoCao/XCParse}
+ * @个人主页 www.muxiaocao.cn
  */
 public class TfOrderInfoDto implements DataInstanceInterface{
 

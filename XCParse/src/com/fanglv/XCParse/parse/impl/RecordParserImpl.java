@@ -154,6 +154,7 @@ public class RecordParserImpl<E extends DataInstanceInterface> implements Record
 				return false;
 			if (getClass() != obj.getClass())
 				return false;
+			@SuppressWarnings("unchecked")
 			Data other = (Data) obj;
 
 			if (dataName == null) {

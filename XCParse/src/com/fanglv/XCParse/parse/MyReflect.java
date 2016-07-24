@@ -13,6 +13,7 @@ import java.util.Date;
  */
 public class MyReflect {
 
+	@SuppressWarnings("deprecation")
 	public static Object myPropertyEditor(Field field,String context) {
 		context = context.trim();
 		String type = field.getType().getName();

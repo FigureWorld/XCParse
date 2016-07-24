@@ -2,7 +2,6 @@ package com.fanglv.XCParse.test;
 
 import java.util.List;
 
-import com.fanglv.XCParse.data.DataInstanceInterface;
 import com.fanglv.XCParse.test.excel.ExcelParse;
 import com.fanglv.XCParse.test.excel.TfOrderInfoDto;
 
