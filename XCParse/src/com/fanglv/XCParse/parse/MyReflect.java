@@ -14,7 +14,7 @@ import java.util.Date;
 public class MyReflect {
 
 	@SuppressWarnings("deprecation")
-	public static Object myPropertyEditor(Field field,String context) {
+	public static Object myPropertyEditor(Field field,String context) throws Exception{
 		context = context.trim();
 		String type = field.getType().getName();
 		if (type.equals(String.class.getName())) {
@@ -34,6 +34,10 @@ public class MyReflect {
 			return new Float(context);
 		}else if (type.equals(Boolean.class.getName())) {
 			return context.equals("1");
+		}else if (type.equals(Double.class.getName())) {
+			return Double.parseDouble(context);
+		}else if (type.equals("double")) {
+			return Double.parseDouble(context);
 		}else {
 			return context;
 		}

@@ -23,8 +23,11 @@ public interface RecordParser<E extends DataInstanceInterface> {
 	 * 		文本数据
 	 * @param
 	 * 		分隔符
+	 * @throws Exception 
+	 * @throws SecurityException 
+	 * @throws NoSuchMethodException 
 	 */
-	public E parse(String value,String split,CallBack callBack);
+	public E parse(String value,String split,CallBack callBack) throws NoSuchMethodException, SecurityException, Exception;
 	
 	/**
 	 * 获取对应字段的value值
